@@ -120,11 +120,12 @@
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  /* padding: 80px; */
   text-align: center;
   background: #1abc9c;
   color: white;
   height: 500px;
+  background-image:url(https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg);
 }
 
 /* Increase the font size of the heading */
@@ -132,11 +133,16 @@
   font-size: 40px;
 }
 
+.header h2 {
+  font-size: 40px;
+  color: black;
+}
+
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  position: sticky;
+  background-color: hsl(0deg 0% 20% / 0%);
+  /* position: sticky; */
   position: -webkit-sticky;
   top: 0;
 }
@@ -145,7 +151,7 @@
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: rgb(48, 45, 45);
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -187,3 +193,20 @@
   position: relative;
   display: inline-block;
 }
+
+.image {
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  color: black;
+}
+
+.containerCardItem:hover .image {
+  opacity: 1;
+  transform: scale(1.5); 
+}
+
+/* background-blend-mode: darken; */
